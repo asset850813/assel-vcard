@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -18,63 +17,63 @@
       min-height: 100vh;
       color: #333;
     }
+
     .card {
       background: white;
       border-radius: 16px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       padding: 24px;
-      margin-top: 40px;
+      max-width: 400px;
       width: 90%;
-      max-width: 420px;
+      margin-top: 40px;
       text-align: center;
     }
-    .photo {
-      width: 160px;
-      height: 160px;
-      object-fit: cover;
-      border-radius: 50%;
-      margin-bottom: 20px;
-    }
-    .name {
+
+    h1 {
       font-size: 24px;
-      font-weight: bold;
+      margin-bottom: 8px;
     }
-    .title {
-      color: #666;
+
+    p.subtitle {
       font-size: 16px;
-      margin-bottom: 20px;
+      color: #666;
+      margin: 0;
     }
-    .quote {
+
+    p.quote {
       font-style: italic;
-      margin-bottom: 24px;
-      color: #555;
+      color: #a44;
+      margin: 16px 0;
     }
-    .link-button {
+
+    .btn {
       display: block;
       background: #000;
-      color: white;
-      text-decoration: none;
+      color: #fff;
       padding: 12px;
+      margin: 8px 0;
       border-radius: 8px;
-      margin: 10px 0;
-      transition: background 0.3s;
+      text-decoration: none;
+      transition: background 0.3s ease;
     }
-    .link-button:hover {
-      background: #444;
+
+    .btn:hover {
+      background: #333;
     }
   </style>
 </head>
 <body>
   <div class="card">
-    <img class="photo" src="https://chat.openai.com/mnt/data/3677c485-dc06-42a1-8793-49e5e4b46922.png" alt="Асель Тастамбекова">
-    <div class="name">Асель Тастамбекова</div>
-    <div class="title">Директор компании \"TAU\"</div>
-    <div class="quote">Жить красиво — просто!</div>
-    <a class="link-button" href="https://wa.me/77052208117" target="_blank">Написать в WhatsApp</a>
-    <a class="link-button" href="https://t.me/+77052208117" target="_blank">Связаться в Telegram</a>
-    <a class="link-button" href="https://www.instagram.com/assel_.t/" target="_blank">Instagram</a>
-    <a class="link-button" href="mailto:k_au@mail.ru">Написать на Email</a>
+    <h1>Асель Тастамбекова</h1>
+    <p class="subtitle">Директор компании “TAU”</p>
+    <p class="quote">Жить красиво — просто!</p>
+
+    <a href="https://wa.me/77052208117" class="btn" target="_blank">Написать в WhatsApp</a>
+    <a href="https://t.me/77052208117" class="btn" target="_blank">Связаться в Telegram</a>
+    <a href="https://instagram.com/assel_.t" class="btn" target="_blank">Instagram</a>
+    <a href="mailto:k_au@mail.ru" class="btn">Написать на Email</a>
   </div>
 </body>
 </html>
+
 
